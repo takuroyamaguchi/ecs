@@ -13,5 +13,5 @@ spec:
     - networkName: "VM Network"
       ethernetCardType: "vmxnet3"
   vmMetadata:
-    configMapName: user-data-ubuntu
-    transport: CloudInit
+    #configMapName: user-data-ubuntu
+    #transport: CloudInit
