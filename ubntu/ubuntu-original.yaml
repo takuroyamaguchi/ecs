@@ -6,7 +6,7 @@ metadata:
   annotations:
     vmoperator.vmware.com/image-supported-check: disable
 spec:
-  className: my-vm-class-1
+  className: best-effort-small
   imageName: cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.ova
   powerState: poweredOn
   networkInterfaces:
