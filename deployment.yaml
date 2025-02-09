@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elyza-llama-3-elyza-jp-8b-gguf
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elyza-llama-3-elyza-jp-8b-gguf
+  template:
+    metadata:
+      labels:
+        app: elyza-llama-3-elyza-jp-8b-gguf
+    spec:
+      containers:
+      - name: elyza-llama-3-elyza-jp-8b-gguf
+        image: ollama/elyza-llama-3-elyza-jp-8b-gguf
+        ports:
+        - containerPort: 11434
+        resources:
+          requests:
+            memory: "16Gi" 
+            cpu: "4"    
+          limits:
+            memory: "32Gi" 
+            cpu: "8"
